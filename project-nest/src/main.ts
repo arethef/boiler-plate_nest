@@ -17,10 +17,10 @@ async function bootstrap() {
   app.enableCors();
   app.use(cookieParser());
   const config = new DocumentBuilder()
-    .setTitle('Backed Ticket')
-    .setDescription('The bb API description')
+    .setTitle('boiler-plate_nest')
+    .setDescription('The boiler-plate_nest API description')
     .setVersion('0.0.1')
-    .addTag('bb')
+    .addTag('boiler-plate_nest')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
